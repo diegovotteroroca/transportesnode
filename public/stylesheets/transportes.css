@@ -137,6 +137,11 @@ h2{
     box-sizing: border-box; 
 }
     
+.persona img{
+    max-width: 75%;
+    border-radius: 50%;
+    box-shadow:  0 0 5px rgb(87, 86, 86);
+    
 }
 
 .persona h5, .persona h6{
