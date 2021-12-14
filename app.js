@@ -14,6 +14,7 @@ var serviciosRouter = require('./routes/servicios'); //servicios.js
 var galeriaRouter = require('./routes/galeria'); //galeria.js
 var novedadesRouter = require('./routes/novedades'); //novedades.js
 var contactoRouter = require('./routes/contacto'); //contacto.js
+var loginRouter = require('./routes/admin/login'); //admin/login
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/servicios', serviciosRouter); //linea 9
 app.use('/galeria', galeriaRouter); //linea 10
 app.use('/novedades', novedadesRouter); //linea 11
 app.use('/contacto', contactoRouter); //linea 12
+app.use('/admin/login', loginRouter); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
