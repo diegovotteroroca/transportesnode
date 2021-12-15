@@ -4,7 +4,7 @@ var usuariosModel = require('./../../models/usuariosModels');
 
 /*recibir y mostrar la vista de admin/login*/
 router.get('/', function (req, res, next){
-    res.render('admin/login',{
+    res.render('admin/login', {
      layout: 'admin/layout'
     })
 });
@@ -24,7 +24,7 @@ router.post('/', async function(req,res,next){
             
             res.redirect('/admin/novedades');
         }else{
-            res.render('admin/login',{
+            res.render('admin/login', {
                 layout: 'admin/layout',
                 error: true
             })
